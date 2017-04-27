@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  //document.getElementById('liTab_strCDA_852_field_0_1_tableid_2') = 'myclass';
+</script>
+<style>
+
+table.cssMaster_Table100PC_SectionHeader {
+
+	width:980px;
+    border: 2px solid 	#613783;
+	border: 2px solid 	#000000;
+	border-spacing:2;
+	border-color:	#934042;
+	color:#ff0000;
+	 background: #eeebe4;
+	background-color:#eeebe4;
+	
+	
+	height:30px;
+    border-collapse:separate;
+
+	padding: 8px;
+	padding-left: 7px;
+	behavior: url("https://ww3.allnone.ie/library/javascript/PIE.js");
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-khtml-border-radius: 15px; 
+	-o-border-radius: 15px;
+	overflow: hidden; 
+	-pie-track-active: true;
+	-pie-track-hover: true;
+}
+	.Highlighted a{
+
+	  background-color : #ff0000;
+	   background-image :none !important;
+	   color: Red !important;
+	   font-weight:bold !important;
+	   font-size: 12pt;
+	}
+	.cssInlineTabs ul li a {
+    position: relative;
+    display: block;
+    margin-left: 6px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #B22222;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    -moz-border-radius-topleft: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-right-radius: 4px;
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cssInlineTabs ul li a:hover {
+	background-color: #B22222;
+	cursor:pointer;
+}
+
+#cssButton_Red{
+	
+	background-color:#BC0000;
+}
+
+#ajax_table_ls_{
+	
+	background-color:#FFFFFF;
+	color:#FFFFFF;
+	background:#FFFFFF
+}
+
+#ajax_table_ls_tr__head{
+	
+	background-color:#FFFFFF;
+	color:#FFFFFF;
+	background:#FFFFFF
+}
+
+
+
+/*.myclass {
+    position: relative;
+    display: block;
+    margin-left: 6px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: yellow;;
+    z-index: 9999;
+    border: 1px solid #ccc;
+    -moz-border-radius-topleft: 4px;
+    border-top-left-radius: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-right-radius: 4px;
+    color: yellow;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+	
+}
+
+*/
+
+
+		
+</style>
+
+
+<script>
+
+
+
+
+var strCDA_852_field_0_4		= document.getElementById('strCDA_852_field_0_4');
+var strCDA_852_field_0_20		= document.getElementById('strCDA_852_field_0_20');
+var strCDA_852_field_0_21		= document.getElementById('strCDA_852_field_0_21');
+var strCDA_852_field_0_22		= document.getElementById('strCDA_852_field_0_22');
+
+
+
+document.getElementById('tableBE_AssignTask').style.display			= 'none'; //Hides the assign task
+document.getElementById('tableBE_ViewAppointments').style.display	= 'none'; //Hides the view appointments
+document.getElementById('tableBE_AppointmentFrom').style.display	= 'none'; //Hides the appointment from
+document.getElementById('tableBE_AppointmentTo').style.display		= 'none'; //Hides the appointment to
+document.getElementById('tableBE_Callback').style.display			= 'none'; //Hides the Callback Option
+document.getElementById('tableBE_ClosingScript').style.display		= 'none'; //Hides the closing script
+document.getElementById( 'imgToggle_strCDA_852_field_0_27').style.display = 'none';
+document.getElementById( 'imgToggle_strCDA_852_field_0_2').style.display = 'none';
+document.getElementById( 'imgToggle_strCDA_852_field_0_3').style.display = 'none';
+document.getElementById( 'imgToggle_strCDA_852_field_0_19').style.display = 'none';
+document.getElementById( 'imgToggle_strCDA_852_field_0_39').style.display = 'none';
+document.getElementById( 'imgToggle_strCDA_852_field_0_65').style.display = 'none';
+document.getElementById( 'imgToggle_strCDA_852_field_0_66').style.display = 'none';
+document.getElementById( 'imgToggle_strCDA_852_field_0_67').style.display = 'none';
+
+
+function index(){
+	
+	
+}
+ 
+function getProjectName(){
+	document.getElementById('Field_1').value = document.getElementById('strCDA_852_field_0_4').value;	
+}
+
+function getStatusMilestone10(){
+if(document.getElementById('strCDA_852_field_0_136').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_131').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_136').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_131').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_136').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_131').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_136').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_131').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_136').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_131').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+ else
+if(document.getElementById('strCDA_852_field_0_136').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_131').value= '';
+	
+}
+}
+function getStatusMilestone9(){
+if(document.getElementById('strCDA_852_field_0_130').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_125').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_130').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_125').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_130').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_125').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_130').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_125').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_130').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_125').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+ else
+if(document.getElementById('strCDA_852_field_0_130').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_125').value= '';
+	
+}
+}
+function getStatusMilestone8(){
+if(document.getElementById('strCDA_852_field_0_124').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_119').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_124').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_119').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_124').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_119').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_124').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_119').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_124').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_119').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+ else
+if(document.getElementById('strCDA_852_field_0_124').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_119').value= '';
+	
+}
+}
+function getStatusMilestone7(){
+if(document.getElementById('strCDA_852_field_0_118').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_113').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_118').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_113').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_118').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_113').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_118').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_113').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_118').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_113').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+ else
+if(document.getElementById('strCDA_852_field_0_118').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_100').value= '';
+	
+}
+}
+function getStatusMilestone6(){
+if(document.getElementById('strCDA_852_field_0_112').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_107').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_112').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_107').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_112').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_107').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_112').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_107').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_112').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_107').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+ else
+if(document.getElementById('strCDA_852_field_0_112').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_107').value= '';
+	
+}
+}
+function getStatusMilestone5(){
+if(document.getElementById('strCDA_852_field_0_91').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_100').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_91').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_100').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_91').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_100').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_91').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_100').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_91').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_100').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+ else
+if(document.getElementById('strCDA_852_field_0_91').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_100').value= '';
+	
+}
+}
+
+
+function getStatusMilestone4(){
+if(document.getElementById('strCDA_852_field_0_88').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_99').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_88').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_99').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_88').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_99').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_88').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_99').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_88').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_99').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+ else
+if(document.getElementById('strCDA_852_field_0_88').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_99').value= '';
+	
+}
+}
+
+
+
+function getStatusMilestone3(){
+if(document.getElementById('strCDA_852_field_0_85').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_98').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_85').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_98').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_85').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_98').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_85').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_98').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_85').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_98').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+ else
+if(document.getElementById('strCDA_852_field_0_85').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_98').value= '';
+	
+}
+}
+
+
+
+function getStatusMilestone2(){
+if(document.getElementById('strCDA_852_field_0_82').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_97').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_82').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_97').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_82').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_97').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_82').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_97').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_82').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_97').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+else
+if(document.getElementById('strCDA_852_field_0_82').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_97').value= '';
+
+}
+}
+
+
+function getStatusMilestone1(){
+if(document.getElementById('strCDA_852_field_0_31').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_96').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_31').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_96').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_31').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_96').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_31').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_96').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_31').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_96').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+else
+if(document.getElementById('strCDA_852_field_0_31').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_96').value= '';
+	
+}
+}
+
+function getStatus(){
+if(document.getElementById('strCDA_852_field_0_13').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_49').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_13').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_49').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_13').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_49').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_13').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_49').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_13').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_49').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+else
+if(document.getElementById('strCDA_852_field_0_13').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_49').value= '';
+	
+}
+}
+
+function getCost(){
+if(document.getElementById('strCDA_852_field_0_14').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_52').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_14').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_52').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_14').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_52').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_14').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_52').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} 
+
+else
+if(document.getElementById('strCDA_852_field_0_14').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_52').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+
+else
+if(document.getElementById('strCDA_852_field_0_14').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_52').value= '';
+	
+}
+}
+
+
+
+function getRevenue(){
+if(document.getElementById('strCDA_852_field_0_15').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_53').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_15').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_53').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_15').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_53').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_15').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_53').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_15').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_53').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}
+
+else
+if(document.getElementById('strCDA_852_field_0_15').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_53').value= '';
+	
+}
+
+
+}
+function getResources(){
+if(document.getElementById('strCDA_852_field_0_16').value == 'On Target'){
+	
+	document.getElementById('strCDA_852_field_0_54').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_16').value == 'At Risk'){
+	
+	document.getElementById('strCDA_852_field_0_54').value= 'https://ww3.allnone.ie/client/client_fexco/custom/yellowicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_16').value == 'Behind'){
+	
+	document.getElementById('strCDA_852_field_0_54').value= 'https://ww3.allnone.ie/client/client_fexco/custom/redicon.png';
+	
+} else
+if(document.getElementById('strCDA_852_field_0_16').value == 'Complete'){
+	
+	document.getElementById('strCDA_852_field_0_54').value= 'https://ww3.allnone.ie/client/client_fexco/custom/greenicon2.png';
+
+
+
+}else
+if(document.getElementById('strCDA_852_field_0_16').value == 'N/A'){
+	
+	document.getElementById('strCDA_852_field_0_54').value= 'https://ww3.allnone.ie/client/client_fexco/custom/na.jpg';
+	
+}	
+ else
+if(document.getElementById('strCDA_852_field_0_16').value == ''){
+	
+	document.getElementById('strCDA_852_field_0_54').value= '';
+	
+}
+}
+ /*document.getElementById('strContact_Outcome').onclick = function numberWithCommas(x) {
+	 
+	 if (document.getElementById('strContact_Outcome').value == 'Save Test'){
+    return x.toString().replace(/B(?=(d{3})+(?!d))/g, ",");
+	 }
+}
+
+
+
+var n= 'strCDA_852_field_0_14'
+n.toLocaleString()
+
+var x= 'strCDA_852_field_0_15'
+
+.toLocaleString()
+
+
+var z= 'strCDA_852_field_0_16'
+
+z.toLocaleString()*/
+
+function numberWithCommas(x,y) {
+     var n = parseFloat(x).toLocaleString();
+     y.value = n;
+       };
+/**********************************************
+
+**********************************************
+Author(s)
+**********************************************
+--	Patrick Jenkins
+-- 	All n One Content Developer
+
+		© All n One Ltd 2005 - 2014
+		
+**********************************************
+Testers:
+**********************************************
+--	Daniel Coughlan		--> Lead Tester
+-- 	Robert Carson		--> Jnr Tester
+--	Thomas Glennon		--> Jnr Tester
+
+**********************************************
+Function Headers
+**********************************************
+
+function fn_DrawTheAddUpdateContactsSection(){
+function fn_GenerateAListOfAllContactsForThatClient(){
+function fn_InsertTheVauesToTheTheContactsSection(){
+function fn_CheckToSeeIfTheParentRecordIsInserted(){
+function fn_AddAParentRecordToTheDB(){
+function fn_AddAContactToTheContactList(){
+function fn_UpdateAContactOnTheContactList(){
+function fn_DeleteAContactFromTheContactList(){
+function fn_ClearAddUpdateDeleteFunction(){
+function fn_TidyOnLoad(){
+function fn_Main(){
+	
+**********************************************/
+
+
+/**********************************************
+Custom - HTML Code that should be added to two questions
+**********************************************
+-----------------------------------------------------------------------------------------------------------------------
+ Replace the contents of the Contact List Question with 	--- 	<div id='SectionForTheDisplayAllContacts'></div>
+-----------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------
+ Replace the contents of the Contact Capture Section with 	--- <	div id='SectionForTheAddUpdateContactsData'></div>
+-----------------------------------------------------------------------------------------------------------------------
+**********************************************/
+
+/**********************************************
+	Global Arrays - Fexco to modify when
+	replicating the contacts process
+**********************************************/
+
+var glbBeXFormIdOfContactsDatabase					=	864;							// Id of the contacts form
+var glbContactDetailsColumnLimit					=	3;							// Column count for the add/update/delete contact details section
+var glbFieldThatContainsHiddenID					=	'strCDA_852_field_0_59';		// Hidden - Record Id from Contacts DB - Question
+var glbFieldsInContactsToLinkOn						=	'strCDA_864_field_0_10'; 	// Field in the contacts form that contains the linked field
+var strFieldInTheContactsDBThatContainsTheParentID	=	'strCDA_864_field_0_10'; 	// Field in the contacts form that contains the linked field
+
+//=================================================================================//
+
+// This list of data must start with  NULL (do not remove NULL), This list controls the text of the questions you want to appear in the Add/Update/Delete Contact details section
+var aryTextOfDataToCaptureAboutContacts				=	new Array('NULL','Project Name','Name','Role','% time Commited','Committed Until','Constraint Comments','FEXCO Department','External');
+
+//This list of data must start with  NULL (do not remove NULL), This list controls type of question that is displayed to the users there are two choices textbox - yes/no (dropdown list)
+var aryQuestionTypesOfDataToCapture					=	new Array('NULL','textbox','textbox','textbox','textbox','textbox','textbox','dropdown','textbox');
+
+
+//=================================================================================//
+
+//=================================================================================//
+
+// This list contains the column heading of the table that lists all of the contacts assocated with a record
+var aryOfFieldNamesToRetrieveFromContactsDB			=	new Array('Project Name','Name','Role','% time Commited','Committed Until','Constraint Comments','FEXCO Department','External');
+
+
+// This lists the fields in the contacts database that you want to show in the list of contacts
+var aryOfFieldsToRetrieveFromContactsDB				=	new Array('strCDA_864_field_0_13', 'strCDA_864_field_0_1','strCDA_864_field_0_11','strCDA_864_field_0_2','strCDA_864_field_0_3','strCDA_864_field_0_6','strCDA_864_field_0_5','strCDA_864_field_0_12');
+
+
+//=================================================================================//
+
+//=================================================================================//
+
+// This list contains the column headings of the fields you want to insert into the Add / Update / Delete Section when updateing a record
+
+var aryListOfFieldNameToGetFromTheContactForm		=	new Array('Project Name','Name','Role','% time Commited','Committed Until','Constraint Comments','FEXCO Departments','External');
+
+// This list contains the records data you want to insert into the Add / Update / Delete Section when updateing a record
+
+var aryListOfFieldsToGetFromTheContactForm		=	new Array('strCDA_864_field_0_13','strCDA_864_field_0_1','strCDA_864_field_0_11','strCDA_864_field_0_2','strCDA_864_field_0_3','strCDA_864_field_0_6','strCDA_864_field_0_5','strCDA_864_field_0_12');
+
+//=================================================================================//
+
+//=================================================================================//
+
+// This list contains the column headings of the fields that you wish to insert / update in the contacts database
+var aryListOfFieldNameToPerformAjaxInsertUpdate		=	new Array('Project Name','Name','Role','% time Commited','Committed Until','FEXCO/External','FEXCO Departments','External Company Name','Costraint Comments','FEXCO Departments','External');
+// This list contains the fields in the contacts database that you want to insert / update the data in
+var aryListOfFieldsToPerformAjaxInsertUpdate		=	new Array('strCDA_864_field_0_13','strCDA_864_field_0_1','strCDA_864_field_0_11','strCDA_864_field_0_2','strCDA_864_field_0_3','strCDA_864_field_0_6','strCDA_864_field_0_5','strCDA_864_field_0_12');
+
+//=================================================================================//
+
+
+				/**********************************************************************************************
+					§§§§§§		DO NOT MODIFY ANY LINE OF JAVASCRIPT AND AJAX CODE BELOW THIS LINE		§§§§§§ 
+				***********************************************************************************************/
+
+/**********************************************
+	Global variabbles
+**********************************************/
+
+var objSectionForTheAddUpdateContactsData			=	document.getElementById('SectionForTheAddUpdateContactsData');
+var objSectionForTheDisplayAllContacts				=	document.getElementById('SectionForTheDisplayAllContacts');
+var objFieldThatContainsHiddenID					=	document.getElementById(glbFieldThatContainsHiddenID);
+var objIntCDA_Id									=	document.getElementById('intCDA_Id');
+var objIntCampaign_Id								=	document.getElementById('intCampaign_Id')
+var date1											=   document.getElementById('strCDA_852_field_0_38');
+var date2											=   document.getElementById('strCDA_852_field_0_81');
+var date3											=   document.getElementById('strCDA_852_field_0_84');
+var date4											=   document.getElementById('strCDA_852_field_0_87');
+var date5											=   document.getElementById('strCDA_852_field_0_90');
+var date6											=   document.getElementById('strCDA_852_field_0_111');
+var date7											=   document.getElementById('strCDA_852_field_0_117');
+var year8											=   document.getElementById('strCDA_852_field_0_123');
+var year9											=   document.getElementById('strCDA_852_field_0_129');
+var year10											=   document.getElementById('strCDA_852_field_0_135');                                                                                        
+
+var hiddenMilestone1								=   document.getElementById('strCDA_852_field_0_40');
+var hiddenMilestone2								=   document.getElementById('strCDA_852_field_0_41');
+var hiddenMilestone3								=   document.getElementById('strCDA_852_field_0_42');
+var hiddenMilestone4								=   document.getElementById('strCDA_852_field_0_43');
+var hiddenMilestone5								=   document.getElementById('strCDA_852_field_0_48');
+var hiddenMilestone6								=   document.getElementById('strCDA_852_field_0_109');
+var hiddenMilestone7								=   document.getElementById('strCDA_852_field_0_115');
+var hiddenMilestone8								=   document.getElementById('strCDA_852_field_0_121');
+var hiddenMilestone9								=   document.getElementById('strCDA_852_field_0_127');
+var hiddenMilestone10								=   document.getElementById('strCDA_852_field_0_133');
+
+
+var year1											=   document.getElementById('strCDA_852_field_0_38');
+var year2											=   document.getElementById('strCDA_852_field_0_81');
+var year3											=   document.getElementById('strCDA_852_field_0_84');
+var year4											=   document.getElementById('strCDA_852_field_0_87');
+var year5											=   document.getElementById('strCDA_852_field_0_90');
+var year6											=   document.getElementById('strCDA_852_field_0_111');
+var year7											=   document.getElementById('strCDA_852_field_0_117');
+var year8											=   document.getElementById('strCDA_852_field_0_123');
+var year9											=   document.getElementById('strCDA_852_field_0_129');
+var year10											=   document.getElementById('strCDA_852_field_0_135');                                                                                        
+
+var hiddenMilestoneyr1								=   document.getElementById('strCDA_852_field_0_101');
+var hiddenMilestoneyr2								=   document.getElementById('strCDA_852_field_0_102');
+var hiddenMilestoneyr3								=   document.getElementById('strCDA_852_field_0_103');
+var hiddenMilestoneyr4								=   document.getElementById('strCDA_852_field_0_104');
+var hiddenMilestoneyr5								=   document.getElementById('strCDA_852_field_0_105');
+var hiddenMilestoneyr6								=   document.getElementById('strCDA_852_field_0_108');
+var hiddenMilestoneyr7								=   document.getElementById('strCDA_852_field_0_114');
+var hiddenMilestoneyr8								=   document.getElementById('strCDA_852_field_0_120');
+var hiddenMilestoneyr9								=   document.getElementById('strCDA_852_field_0_126');
+var hiddenMilestoneyr10								=   document.getElementById('strCDA_852_field_0_132');
+
+document.getElementById('tableid_95').style.display = 'none';
+/******************************************************************************************************
+	Application: This function handles the drawing of the capture contact details section in the form
+	It add the htnl to the div -- sectionForTheAddUpdateContactsData
+******************************************************************************************************/
+function fn_DrawTheAddUpdateContactsSection(){
+
+	var strReturnString					=	'';
+	var intRowCounter					=	0;
+	
+	strReturnString						=	strReturnString + '<table id="AddUpdateContactsSection">';
+	strReturnString						=	strReturnString + '	<tr>';
+	strReturnString						=	strReturnString + '		<td colspan="3">';
+	strReturnString						=	strReturnString + '			<b>Team Member Details</b>';
+	strReturnString						=	strReturnString + '		</td>';	
+	strReturnString						=	strReturnString + '	</tr>';
+	strReturnString						=	strReturnString + '	<tr>';
+	strReturnString						=	strReturnString + '		<td colspan="3">';
+	strReturnString						=	strReturnString + '			 ';
+	strReturnString						=	strReturnString + '		</td>';	
+	strReturnString						=	strReturnString + '	</tr>';		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	for(var i = 1; i < aryTextOfDataToCaptureAboutContacts.length; i++){
+	
+		
+		if ( ( intRowCounter == 0 )  ) {
+		
+			strReturnString				=	strReturnString + '	<tr>';	
+		}
+		
+		if(aryQuestionTypesOfDataToCapture[i] == 'dropdown'){
+			
+			strReturnString				=	strReturnString + '		<td style="padding:2px;">';
+			strReturnString				=	strReturnString + '			<b>' + aryTextOfDataToCaptureAboutContacts[i] + '</b>';
+			strReturnString				=	strReturnString + '		</td>';
+			strReturnString				=	strReturnString + '		<td style="padding:2px;">';
+			strReturnString				=	strReturnString + '			<select id="Field_'+i+'" name="Field_'+i+'" style="width: 190px;">';
+			strReturnString				=	strReturnString + '				<option value=""></option>';
+			strReturnString				=	strReturnString + '				<option value="FEXCO"> FEXCO</option>';	
+			strReturnString				=	strReturnString + '				<option value="Central Management"> Central Management</option>';	
+			strReturnString				=	strReturnString + '				<option value="Expense Management Services">Expense Management Services</option>';
+			strReturnString				=	strReturnString + '				<option value="Facilities<">Facilities</option>';
+			strReturnString				=	strReturnString + '				<option value="FEXCO Asset Finance">FEXCO Asset Finance</option>';	
+			strReturnString				=	strReturnString + '				<option value="FEXCO Corporate Payments">FEXCO Corporate Payments</option>';
+
+			strReturnString				=	strReturnString + '				<option value="FEXCO Innovation">FEXCO Innovation</option>';
+			strReturnString				=	strReturnString + '				<option value="FEXCO IT">FEXCO IT</option>';
+			strReturnString				=	strReturnString + '				<option value="FEXCO Laharn Enterprises Ltd">FEXCO Laharn Enterprises Ltd</option>';	
+			strReturnString				=	strReturnString + '				<option value="FEXCO Merchant Services">FEXCO Merchant Services</option>';
+
+			strReturnString				=	strReturnString + '				<option value="FEXCO UK">FEXCO UK</option>';
+			strReturnString				=	strReturnString + '				<option value="FEXCO Vat Refunds">FEXCO Vat Refunds</option>';
+			strReturnString				=	strReturnString + '				<option value="FFES">FFES</option>';	
+			strReturnString				=	strReturnString + '				<option value="Group Finance">Group Finance</option>';
+
+			strReturnString				=	strReturnString + '				<option value="Group Services">Group Services</option>';
+			strReturnString				=	strReturnString + '				<option value="Human Resources">Human Resources</option>';
+			strReturnString				=	strReturnString + '				<option value="Insurance">Insurance</option>';	
+			strReturnString				=	strReturnString + '				<option value="Legal">Legal</option>';	
+
+            strReturnString				=	strReturnString + '				<option value="Marketing">Marketing</option>';
+			strReturnString				=	strReturnString + '				<option value="MBSC">MBSC</option>';
+			strReturnString				=	strReturnString + '				<option value="MBSO">MBSO</option>';	
+			strReturnString				=	strReturnString + '				<option value="MBSO Central">MBSO Central</option>';	
+            strReturnString				=	strReturnString + '				<option value="Prize Bonds">Prize Bonds</option>';	
+			strReturnString				=	strReturnString + '				<option value="Treasury">Treasury</option>';				
+			strReturnString				=	strReturnString + '			</select>';	
+			strReturnString				=	strReturnString + '		</td>';
+			
+		
+			
+			
+			
+			
+			
+		
+		
+			
+			
+			
+			
+			
+		}
+		
+		
+		
+		
+		else{
+			
+			strReturnString				=	strReturnString + '		<td style="padding:2px;">';
+			strReturnString				=	strReturnString + '			<b>' + aryTextOfDataToCaptureAboutContacts[i] + '</b>';
+			strReturnString				=	strReturnString + '		</td>';
+			strReturnString				=	strReturnString + '		<td style="padding:2px;">';
+			strReturnString				=	strReturnString + '			<input type="text" id="Field_'+i+'" name="Field_'+i+'" width="33%"/>';	
+			strReturnString				=	strReturnString + '		</td>';
+		}
+		
+		intRowCounter					=	intRowCounter + 1;
+		
+		if (  ( intRowCounter == glbContactDetailsColumnLimit ) && ( intRowCounter != 1 ) ) {
+			
+			strReturnString				=	strReturnString + '	</tr>';
+			strReturnString				=	strReturnString + '	<tr>';
+			intRowCounter				=	0;
+		}
+	}
+	
+	strReturnString						=	strReturnString + '	</tr>';
+	strReturnString						=	strReturnString + '	<tr>';
+	strReturnString						=	strReturnString + '		<td colspan="3">';
+	strReturnString						=	strReturnString + '			 ';
+	strReturnString						=	strReturnString + '		</td>';	
+	strReturnString						=	strReturnString + '	</tr>';	
+	
+	
+	if( document.getElementById( 'intCDA_Id' ).value == '0' ){
+		strReturnString					=	strReturnString + '	<tr>';
+		strReturnString					=	strReturnString + '		<td colspan="3"  style="padding:2px;">';
+		strReturnString					=	strReturnString + '			<input type="button" name="btn_Create_Contact" id="btn_Create_Contact" value="Create Contact" class="cssButton_Green" style="width:120px;" onclick="document.getElementById(\'btn_Add_Contact\').style.display=\'inline\';document.getElementById(\'btn_Create_Contact\').style.display=\'none\';fn_CheckToSeeIfTheParentRecordIsInserted();">';
+		strReturnString					=	strReturnString + '			<input type="button" name="btn_Add_Contact" id="btn_Add_Contact" value="Add Contact" class="cssButton_Green" style="width:120px;style:none;" onclick="fn_CheckToSeeIfTheParentRecordIsInserted();">';
+		strReturnString					=	strReturnString + '		</td>';	
+		strReturnString					=	strReturnString + '	</tr>';	
+	}
+	else{
+	strReturnString						=	strReturnString + '	<tr>';
+	strReturnString						=	strReturnString + '		<td colspan="3"  style="padding:2px;">';
+	strReturnString						=	strReturnString + '			<input type="button" name="btn_Add_Contact" id="btn_Add_Contact" value="Add Contact" class="cssButton_Green" style="width:120px;" onclick="fn_CheckToSeeIfTheParentRecordIsInserted();">';
+	strReturnString						=	strReturnString + '		</td>';	
+	strReturnString						=	strReturnString + '	</tr>';	
+	}
+	
+	strReturnString						=	strReturnString + '	<tr  id="UpdateDeleteButtonRow">';
+	strReturnString						=	strReturnString + '		<td  style="padding:2px;">';
+	strReturnString						=	strReturnString + '			<input type="button" name="btn_Update_Contact" id="btn_Update_Contact" value="Update Contact" class="cssButton_Blue" style="width:120px;" onclick="fn_UpdateAContactOnTheContactList();">';
+	strReturnString						=	strReturnString + '		</td>';	
+	
+	strReturnString						=	strReturnString + '		<td  style="padding:2px;">';
+	strReturnString						=	strReturnString + '			<input type="button" name="btn_Delete_Contact" id="btn_Delete_Contact" value="Delete Contact" class="cssButton_Red" style="width:120px;" onclick="fn_DeleteAContactFromTheContactList();">';
+	strReturnString						=	strReturnString + '		</td>';	
+	
+	strReturnString						=	strReturnString + '	</tr>';
+	
+	objSectionForTheAddUpdateContactsData.innerHTML	=	strReturnString;
+	document.getElementById( 'Field_1' ).value 		= document.getElementById( 'strCDA_852_field_0_4' ).value;	
+}
+
+/******************************************************************************************************
+	Application: This function draws an Ajax table of the existing contact for the record on screen
+	It draw the table int div -- SectionForTheDisplayAllContacts
+******************************************************************************************************/
+function fn_GenerateAListOfAllContactsForThatClient(){
+
+	
+	objSectionForTheDisplayAllContacts.innerHTML	=	'';	
+	document.getElementById( 'tableid_57' ).style.display	= 'none';
+	
+	if( document.getElementById( 'intCDA_Id' ).value == '0' ){
+		document.getElementById('btn_Add_Contact').style.display			=	'none';
+	}
+	
+	if (typeof aryAjax_Settings=="undefined")
+
+			alert("Team Composition did not load. Please dont enter & or commas");
+	else {
+
+		aryAjax_Settings[0] 	= "client_fexco";                                            		//Your system name
+		aryAjax_Settings[1] 	= "";                                                           	//The CMI API Username
+		aryAjax_Settings[2] 	= "";                                                           	//The CMI API User password
+
+		aryAjax_Settings[3] 	= glbBeXFormIdOfContactsDatabase;                               	//The Id of the campaign
+		aryAjax_Settings[4] 	= strFieldInTheContactsDBThatContainsTheParentID;		
+		aryAjax_Settings[5] 	= document.getElementById( ( 'intCDA_Id' ) ).value;	           
+		aryAjax_Settings[13] 	= "-1";                                                            	//Id of the current record, used for delimiting and not repeating current 
+		aryAjax_Settings[14] 	= "true";                                                         	//Click through to campaign?
+		aryAjax_Settings[15] 	= "SectionForTheDisplayAllContacts";                                //The id of the destination to which the matching links will be inserted
+		aryAjax_Settings[16] 	= "LiveSearchTable";                                                //The types of processing
+		
+		aryAjax_Settings[6] 	= 'intCDA_' + glbBeXFormIdOfContactsDatabase + '_Id,intCDA_' + glbBeXFormIdOfContactsDatabase + '_Id,'	+	aryOfFieldsToRetrieveFromContactsDB;
+		aryAjax_Settings[12] 	= 'Id,Id,'				+	aryOfFieldNamesToRetrieveFromContactsDB;
+		aryAjax_Settings[17] 	= 'intCDA_' + glbBeXFormIdOfContactsDatabase + '_Id,intCDA_' + glbBeXFormIdOfContactsDatabase + '_Id,'	+	aryOfFieldsToRetrieveFromContactsDB;
+		aryAjax_Settings[18] 	= 'false';
+
+		//Use my login to allow me to search
+		aryAjax_Settings[22] 	= document.getElementById('intSystemGenerated_CompanyId').value;   	//Auto Login - System
+		aryAjax_Settings[23] 	= document.getElementById('intSystemGenerated_UserId').value;      	//Auto Login - User
+		aryAjax_Settings[24] 	= document.getElementById('intSystemGenerated_LoginKey').value;    	//Auto Login - SessionId
+
+		//LiveSearch fields
+		aryAjax_Settings[25] 	= glbFieldThatContainsHiddenID;                                     //Field to be updated when live option clicked
+		aryAjax_Settings[26] 	= 'fn_InsertTheVauesToTheTheContactsSection()';                     //Field to be updated when live option clicked
+		
+		//Live Search Format Options
+		
+		aryAjax_Settings[29] 	= "Last";															//Buttons in the first column or the last column 	
+		aryAjax_Settings[30] 	= "Blue,Red";														//Green/Red button functionality 					
+		aryAjax_Settings[31] 	= "Update Contact,null";											//Button Text (multi separated by ','  				
+		aryAjax_Settings[32] 	= "-1";																//value for matching to show button 2 				
+
+		fn_Ajax_BE_Process();
+    }
+	
+	objSectionForTheDisplayAllContacts.innerHTML += '<br/><br/>';
+	
+	
+	setTimeout(function() {
+		document.getElementById( 'tableid_57' ).style.display	= 'none';
+		document.getElementById( 'tableid_57' ).style.display	= 'inline-table';
+	},670);
+	
+	
+	
+}
+
+
+/******************************************************************************************************
+	Application: This function performs an Ajax data retieval on the contact the user wants to update
+******************************************************************************************************/
+function fn_InsertTheVauesToTheTheContactsSection(){
+	
+	var aryTempFieldsToPopulateValuesInto								=	new Array();
+	document.getElementById('btn_Add_Contact').style.display			=	'none';
+	document.getElementById('btn_Update_Contact').style.display			=	'inline';
+	document.getElementById('btn_Delete_Contact').style.display			=	'inline';
+	
+	for(var i = 1; i< aryTextOfDataToCaptureAboutContacts.length; i++){
+		
+		
+		aryTempFieldsToPopulateValuesInto.push('Field_' + i);	
+	}
+
+   if (typeof aryAjax_Settings=='undefined')
+			alert('Library did not load');
+	  else {
+			aryAjax_Settings[0] 		= 'client_fexco';              										//Your system name
+			aryAjax_Settings[1] 		= '';                      											//The CMI API Username
+			aryAjax_Settings[2] 		= '';                      											//The CMI API User password
+			aryAjax_Settings[3] 		= glbBeXFormIdOfContactsDatabase;                       			//The campaign which contains the product list
+
+			aryAjax_Settings[4] 		= 'intCDA_' + glbBeXFormIdOfContactsDatabase + '_Id';   			//The field which contains the limiting / grouping factor
+			aryAjax_Settings[5] 		= objFieldThatContainsHiddenID.value; 								//The value to limit the responses by, in this case only yes items
+			
+			aryAjax_Settings[13]		= -1;                         										//Limit responses -1 do not limit
+			aryAjax_Settings[14] 		= 'false';                    										//Draw a table
+			aryAjax_Settings[15] 		= 'divWarning';               										//Where to draw error messages if any
+			aryAjax_Settings[16] 		= 'Insert';              											//Engine to use i.e. Populate
+																		
+			aryAjax_Settings[6] 		= aryListOfFieldsToGetFromTheContactForm.toString();				//The field in the product campaign to display
+			aryAjax_Settings[12] 		= aryListOfFieldNameToGetFromTheContactForm.toString();     		//Not used
+			aryAjax_Settings[17] 		= aryTempFieldsToPopulateValuesInto.toString();						//The field in the current campaign into which the products will be inserted.
+
+			aryAjax_Settings[22] 		= document.getElementById('intSystemGenerated_CompanyId').value;	//Auto Login - System
+			aryAjax_Settings[23] 		= document.getElementById('intSystemGenerated_UserId').value;		//Auto Login - User
+			aryAjax_Settings[24] 		= document.getElementById('intSystemGenerated_LoginKey').value;		//Auto Login - SessionId
+
+			fn_Ajax_BE_Process();
+	  }
+}
+//setTimeout(function() {
+	//document.getElementById('tableid_95').style.display = 'none';
+//},3000);
+/******************************************************************************************************
+	Application: This function checks to see if the record opend in a new or existing one
+	
+	-- if its an existing record it inserts the new contact
+	-- If its a new record it insert the parent reocrd and then inserts the contact
+******************************************************************************************************/
+function fn_CheckToSeeIfTheParentRecordIsInserted(){
+	
+	if( objIntCDA_Id.value == 0 ){
+		
+		var blOkToInsert		= true;
+		var strConfirmBox		= 					'This is a new Project record that has not been saved to the database yet.' + ' ' + ' ';
+		strConfirmBox			= strConfirmBox	+	'Inorder to add a Team Member to this project, the new Project record must be saved to the database first' + ' ' + ' ';
+		strConfirmBox			= strConfirmBox	+	'By clicking the OK button the new record that you are adding will be added to the database,'+ ' ';
+		
+		
+		
+		
+		var objConfrimBox 		= confirm(strConfirmBox);
+		if (objConfrimBox == true)	{ blOkToInsert	= true; }
+		else						{ blOkToInsert	= false;}
+		
+		if( blOkToInsert	== true ){
+			
+			fn_AddAParentRecordToTheDB();
+		}
+		else{
+		
+			alert('Record Not Inserted');	
+		}
+	}
+	else{
+		fn_AddAContactToTheContactList();
+	}
+}
+
+/******************************************************************************************************
+	Application: This function performs the AJAX insert to the parent DB
+******************************************************************************************************/
+function fn_AddAParentRecordToTheDB(){
+	
+	
+	
+	if (typeof aryAjax_Settings=='undefined')
+		alert('Library did not load');
+	else {
+		aryAjax_Settings[0] 	= 	'client_fexco'; 
+		aryAjax_Settings[1] 	= 	'';
+		aryAjax_Settings[2] 	= 	'';
+		aryAjax_Settings[3] 	= 	objIntCampaign_Id.value;
+		aryAjax_Settings[4] 	= 	'null'; 
+		aryAjax_Settings[5] 	= 	'null';
+		aryAjax_Settings[13]	= 	-1;
+		aryAjax_Settings[14] 	= 	'false';
+		aryAjax_Settings[15] 	= 	'';
+		aryAjax_Settings[16] 	= 	'dbInsertRecord';
+		aryAjax_Settings[6] 	=	'intCurrentIdOfRecordInserted';
+		aryAjax_Settings[12] 	=	'Id_Of_Inserted_Record';
+		aryAjax_Settings[17] 	=	'intCDA_Id';	
+
+		aryAjax_Settings[22] 	= 	document.getElementById('intSystemGenerated_CompanyId').value;
+		aryAjax_Settings[23] 	= 	document.getElementById('intSystemGenerated_UserId').value;
+		aryAjax_Settings[24] 	= 	document.getElementById('intSystemGenerated_LoginKey').value;
+		
+		aryAjax_Settings[34] 	= 	'strCDA_' + objIntCampaign_Id.value + '_';				//	Fields to insert to
+		aryAjax_Settings[35] 	= 	' ';													//	Values to insert
+		aryAjax_Settings[36] 	= 	"";														//	Field to search on
+		aryAjax_Settings[37] 	= 	"";														//	Value to search with
+		aryAjax_Settings[38] 	= 	"False";												//	Add a CCl
+		
+		fn_Ajax_BE_Process();
+	}
+	
+	setTimeout(function() {alert('Project record inserted: Please click the Add Team Contact button to add the member to the Team Composition ');},750);
+	
+}
+
+/******************************************************************************************************
+	Application: This function performs the AJAX insert to the contacts DB
+******************************************************************************************************/
+function fn_AddAContactToTheContactList(){
+	
+	var aryTempValuesToInsert		= new Array();
+	
+	for(var i = 1; i< aryTextOfDataToCaptureAboutContacts.length; i++){
+		
+		var strTempId				=	'Field_' + i
+		
+		var strValueForInPut		=	document.getElementById(strTempId).value;
+		strValueForInPut			=	strValueForInPut.replace("'",'');
+		strValueForInPut			=	strValueForInPut.replace("'",'');
+		strValueForInPut			=	strValueForInPut.replace("&",'And');
+		strValueForInPut			=	strValueForInPut.replace("%",'%25');
+		strValueForInPut			=	strValueForInPut.replace(",",'');
+		
+		aryTempValuesToInsert.push(strValueForInPut);	
+	}
+	
+	if (typeof aryAjax_Settings=='undefined')
+		alert('Library did not load');
+	else {
+		aryAjax_Settings[0] 	= 	'client_fexco'; 
+		aryAjax_Settings[1] 	= 	'';
+		aryAjax_Settings[2] 	= 	'';
+		aryAjax_Settings[3] 	= 	glbBeXFormIdOfContactsDatabase;
+		aryAjax_Settings[4] 	= 	'null'; 
+		aryAjax_Settings[5] 	= 	'null';
+		aryAjax_Settings[13]	= 	-1;
+		aryAjax_Settings[14] 	= 	'false';
+		aryAjax_Settings[15] 	= 	'';
+		aryAjax_Settings[16] 	= 	'dbInsertRecord';
+		aryAjax_Settings[6] 	=	'intCurrentIdOfRecordInserted'
+		aryAjax_Settings[12] 	=	'Id_Of_Inserted_Record'
+		aryAjax_Settings[17] 	=	glbFieldThatContainsHiddenID
+
+		aryAjax_Settings[22] 	= 	document.getElementById('intSystemGenerated_CompanyId').value;
+		aryAjax_Settings[23] 	= 	document.getElementById('intSystemGenerated_UserId').value;
+		aryAjax_Settings[24] 	= 	document.getElementById('intSystemGenerated_LoginKey').value;
+		
+		aryAjax_Settings[34] 	= 	aryListOfFieldsToPerformAjaxInsertUpdate + ',' + glbFieldsInContactsToLinkOn;					//	Fields to insert to
+		aryAjax_Settings[35] 	= 	aryTempValuesToInsert.toString()		 + ',' + document.getElementById('intCDA_Id').value;	//	Values to insert
+		aryAjax_Settings[36] 	= 	"";																								//	Field to search on
+		aryAjax_Settings[37] 	= 	"";																								//	Value to search with
+		aryAjax_Settings[38] 	= 	"True";																							//	Add a CCl
+		
+		fn_Ajax_BE_Process();
+	}
+	
+	// Clear the Add/Update/Delete section
+	fn_ClearAddUpdateDeleteFunction();
+	
+	// Generate a new list of contacts for the record
+	setTimeout(function() {
+		alert('New Team Member being added. Press OK to confirm.');
+		fn_GenerateAListOfAllContactsForThatClient();},1500);
+}
+
+/******************************************************************************************************
+	Application: This function perfoms the AJAX update to the contact DB
+******************************************************************************************************/
+function fn_UpdateAContactOnTheContactList(){	
+	
+	var aryTempValuesToInsert		= new Array();
+	
+	for(var i = 1; i< aryTextOfDataToCaptureAboutContacts.length; i++){
+		
+		var strTempId					= 'Field_' + i;
+		
+		var strValueForInPut		=	document.getElementById(strTempId).value;
+		strValueForInPut			=	strValueForInPut.replace("'",'');
+		strValueForInPut			=	strValueForInPut.replace("'",'');
+		strValueForInPut			=	strValueForInPut.replace("&",'and');
+		strValueForInPut			=	strValueForInPut.replace("%",'%25');
+		strValueForInPut			=	strValueForInPut.replace(",",' ');
+		
+		aryTempValuesToInsert.push(strValueForInPut);	
+	}
+	
+	if (typeof aryAjax_Settings=='undefined')
+			alert('Library did not load');
+	else {
+		aryAjax_Settings[0] 	= 	'client_fexco'; 
+		aryAjax_Settings[1] 	= 	'';
+		aryAjax_Settings[2] 	= 	'';
+		aryAjax_Settings[3] 	= 	glbBeXFormIdOfContactsDatabase;
+		aryAjax_Settings[4] 	= 	'null'; 
+		aryAjax_Settings[5] 	= 	'null';
+		aryAjax_Settings[13]	= 	-1;
+		aryAjax_Settings[14] 	= 	'false';
+		aryAjax_Settings[15] 	= 	'';
+		aryAjax_Settings[16] 	= 	'dbUpdateRecord';
+		aryAjax_Settings[6] 	=	'intCurrentIdOfRecordUpdated'
+		aryAjax_Settings[12] 	=	'Id Of Updated Record'
+		aryAjax_Settings[17] 	=	glbFieldThatContainsHiddenID
+
+		aryAjax_Settings[22] 	= 	document.getElementById('intSystemGenerated_CompanyId').value;
+		aryAjax_Settings[23] 	= 	document.getElementById('intSystemGenerated_UserId').value;
+		aryAjax_Settings[24] 	= 	document.getElementById('intSystemGenerated_LoginKey').value;
+		
+		aryAjax_Settings[34] 	= 	aryListOfFieldsToPerformAjaxInsertUpdate 			;		//	Fields to insert to
+		aryAjax_Settings[35] 	= 	aryTempValuesToInsert.toString()					;		//	Values to insert
+		aryAjax_Settings[36] 	= 	'intCDA_' + glbBeXFormIdOfContactsDatabase 	+ '_Id'	;		//	Field to search on
+		aryAjax_Settings[37] 	= 	 objFieldThatContainsHiddenID.value;						//	Value to search with
+		aryAjax_Settings[38] 	= 	"True";						
+		
+		fn_Ajax_BE_Process();
+	}
+	
+	// Clear the Add/Update/Delete section
+	fn_ClearAddUpdateDeleteFunction();
+	
+	// Generate a new list of contacts for the record
+	setTimeout(function() {fn_GenerateAListOfAllContactsForThatClient();},900);
+	
+	// Swap the buttons
+	document.getElementById('btn_Add_Contact').style.display			=	'inline';
+	document.getElementById('btn_Update_Contact').style.display			=	'none';
+	document.getElementById('btn_Delete_Contact').style.display			=	'none';	
+}
+
+/******************************************************************************************************
+	Application: This function performs the AJAX delete on the contacts DB
+******************************************************************************************************/
+function fn_DeleteAContactFromTheContactList(){
+	
+	if (typeof aryAjax_Settings=='undefined')
+			alert('Library did not load');
+	else {
+		aryAjax_Settings[0] 	= 	'client_fexco'; 
+		aryAjax_Settings[1] 	= 	'';
+		aryAjax_Settings[2] 	= 	'';
+		aryAjax_Settings[3] 	= 	glbBeXFormIdOfContactsDatabase;
+		aryAjax_Settings[4] 	= 	'null'; 
+		aryAjax_Settings[5] 	= 	'null';
+		aryAjax_Settings[13]	= 	-1;
+		aryAjax_Settings[14] 	= 	'false';
+		aryAjax_Settings[15] 	= 	'';
+		aryAjax_Settings[16] 	= 	'dbDeleteRecord';
+		aryAjax_Settings[6] 	=	'intRecordIdDeleted'
+		aryAjax_Settings[12] 	=	'Id Record Deleted'
+		aryAjax_Settings[17] 	=	glbFieldThatContainsHiddenID
+
+		aryAjax_Settings[22] 	= 	document.getElementById('intSystemGenerated_CompanyId').value;
+		aryAjax_Settings[23] 	= 	document.getElementById('intSystemGenerated_UserId').value;
+		aryAjax_Settings[24] 	= 	document.getElementById('intSystemGenerated_LoginKey').value;
+		
+		aryAjax_Settings[34] 	= 	'';										//Fields to insert to
+		aryAjax_Settings[35] 	= 	'';										//Values to insert
+		aryAjax_Settings[36] 	= 	'';										//Field to search on
+		aryAjax_Settings[37] 	= 	 objFieldThatContainsHiddenID.value;	//Value to search with
+		aryAjax_Settings[38] 	= 	'';						
+		
+		fn_Ajax_BE_Process();
+	}
+	
+	// Clear the Add/Update/Delete section
+	fn_ClearAddUpdateDeleteFunction();
+	
+	// Generate a new list of contacts for the record
+	setTimeout(function() {fn_GenerateAListOfAllContactsForThatClient();},900);
+	
+	// Swap the buttons
+	document.getElementById('btn_Add_Contact').style.display			=	'inline';
+	document.getElementById('btn_Update_Contact').style.display			=	'none';
+	document.getElementById('btn_Delete_Contact').style.display			=	'none';		
+}
+
+
+/******************************************************************************************************
+	Application: This function resets the Contact Capture Section
+******************************************************************************************************/
+function fn_ClearAddUpdateDeleteFunction(){
+	
+	var strTempID									=	'';
+		
+	for(var i = 1; i< aryTextOfDataToCaptureAboutContacts.length; i++){
+		
+		strTempID									= 'Field_' + i;
+		document.getElementById(strTempID).value 	= '';
+	}	
+	document.getElementById( 'Field_1' ).value 		= document.getElementById( 'strCDA_852_field_0_4' ).value;
+}
+
+/******************************************************************************************************
+	Application: This function handles on load tidy up of the page
+******************************************************************************************************/
+function fn_TidyOnLoad(){
+	
+	document.getElementById('btn_Update_Contact').style.display	=	'none';
+	document.getElementById('btn_Delete_Contact').style.display	=	'none';
+}
+/**********************************************
+	Application: This function gets the month number from the date field
+**********************************************/
+function fn_Get_Month(date,retMonth){
+	var aryDate = date.split('/');
+	var month   = aryDate[1];
+	retMonth.value = month;
+}
+
+function fn_Get_Year(date,retYear){
+	var aryDate = date.split('/');
+	var year   = aryDate[2];
+	retYear.value = year;
+}
+
+/**********************************************
+	Application: Main function of the code this kicks everthing off
+**********************************************/
+function fn_Main(){
+	
+	fn_DrawTheAddUpdateContactsSection();	
+	fn_TidyOnLoad();
+document.getElementById('tableBE_ClosingScript').style.display		= 'none'; //Hides the closing script
+document.getElementById('tableBE_AssignTask').style.display			= 'none'; //Hides the assign task
+document.getElementById('tableBE_ViewAppointments').style.display	= 'none'; //Hides the view appointments
+document.getElementById('tableBE_AppointmentFrom').style.display	= 'none'; //Hides the appointment from
+document.getElementById('tableBE_AppointmentTo').style.display		= 'none'; //Hides the appointment to
+
+var objAllButtons								=	document.getElementsByName('QuickTab');
+		
+	for (var i = 0 ; i < objAllButtons.length; i++){
+		
+		if(objAllButtons[i].value == "<div id='SectionForTheDisplayAllContacts'>Required Field For Contact Capture Section Do not Delete: Field 1 of 3</div>"){
+			
+			objAllButtons[i].value	= 'Existing Contacts List';
+		}
+		if(objAllButtons[i].value == "<div id='SectionForTheAddUpdateContactsData'>Required Field For Contact Capture Section Do not Delete: Field 2 of 3</div>"){
+			
+			objAllButtons[i].value	= 'Add new / update existing contacts';
+		}
+	}
+
+}
+
+
+// * Form level elements on the page
+var liTab_strCDA_852_field_0_1_tableid_27 =  document.getElementById('liTab_strCDA_852_field_0_1_tableid_27');
+ var liTab_strCDA_852_field_0_1_tableid_2 =  document.getElementById('liTab_strCDA_852_field_0_1_tableid_2');
+ var liTab_strCDA_852_field_0_1_tableid_3 =  document.getElementById('liTab_strCDA_852_field_0_1_tableid_3');
+ var liTab_strCDA_852_field_0_1_tableid_19 =  document.getElementById('liTab_strCDA_852_field_0_1_tableid_19');
+ var liTab_strCDA_852_field_0_1_tableid_39 =  document.getElementById('liTab_strCDA_852_field_0_1_tableid_39');
+var strCDA_852_field_0_28				  =		document.getElementById('strCDA_852_field_0_28');
+//***********************************************************************
+// Application   : Goes through every question in the specified range and
+//eithr hides or displays them
+//***********************************************************************
+function fn_RangeDisplayChange( intStartPos, intEndPos, strStyleToApply ){
+	for( var i=intStartPos; i< ( intEndPos + 1 ); i++ ){
+		if( document.getElementById( ( 'tableid_' + i ) ) ){
+			document.getElementById( ( 'tableid_' + i ) ).style.display			= strStyleToApply;
+		}
+	}	
+}
+
+//***********************************************************************
+// Application   : This function is executed on the onclick event of an inline tab
+//***********************************************************************
+function fn_FEXCO_Overview_Logic(){
+	// * Hide all form question on the page
+	fn_RangeDisplayChange( 0, 160, 'none' );
+	
+	// * Show the Inline Tab question 
+	document.getElementById ( 'tableid_1' ).style.display = 'inline';
+	
+	// * Show the section group question
+	document.getElementById ( 'tableid_2' ).style.display = 'inline';
+	
+	// * Show all requited questions for the tab (  required - All that should be visible by default )
+		document.getElementById ( 'tableid_138' ).style.display = 'inline';
+	document.getElementById ( 'tableid_4' ).style.display = 'inline';
+	document.getElementById ( 'tableid_5' ).style.display = 'inline';
+	document.getElementById ( 'tableid_6' ).style.display = 'inline';
+	document.getElementById ( 'tableid_7' ).style.display = 'inline';
+	document.getElementById ( 'tableid_12' ).style.display = 'inline';
+	document.getElementById ( 'tableid_17' ).style.display = 'inline';
+	document.getElementById ( 'tableid_18' ).style.display = 'inline';
+	document.getElementById ( 'tableid_137' ).style.display = 'inline';
+	document.getElementById ( 'tableid_139' ).style.display = 'inline';
+
+	  
+	
+}
+
+function fn_FEXCO_status_Logic(){
+	// * Hide all form question on the page
+	fn_RangeDisplayChange( 0, 160, 'none' );
+	
+	// * Show the Inline Tab question 
+	document.getElementById ( 'tableid_1').style.display = 'inline';
+	
+	// * Show the section group question
+	document.getElementById ( 'tableid_3').style.display = 'inline';
+
+	
+	// * Show all requited questions for the tab (  required - All that should be visible by default )
+	document.getElementById ( 'tableid_13' ).style.display = 'inline';
+	document.getElementById ( 'tableid_14' ).style.display = 'inline';
+	document.getElementById ( 'tableid_15' ).style.display = 'inline';
+	document.getElementById ( 'tableid_16' ).style.display = 'inline';
+}
+
+function fn_FEXCO_BehindReason_Cost(){
+	if(document.getElementById('strCDA_852_field_0_14').value == 'Behind' || document.getElementById('strCDA_852_field_0_14').value == 'At Risk')
+	{
+		document.getElementById ( 'tableid_140' ).style.display = 'inline';	
+		
+		if(document.getElementById('strCDA_852_field_0_141').value != '')
+		{
+			document.getElementById ( 'tableid_141' ).style.display = 'inline';
+		} 
+		
+		if(document.getElementById('strCDA_852_field_0_142').value != '')
+		{
+			document.getElementById ( 'tableid_142' ).style.display = 'inline';
+		} 
+	}
+	
+}
+
+function fn_FEXCO_BehindReason_Revenue(){
+	if(document.getElementById('strCDA_852_field_0_15').value == 'Behind' || document.getElementById('strCDA_852_field_0_15').value == 'At Risk')
+	{
+		document.getElementById ( 'tableid_142' ).style.display = 'inline';	
+		
+		if(document.getElementById('strCDA_852_field_0_140').value != '')
+		{
+			document.getElementById ( 'tableid_140' ).style.display = 'inline';
+		} 
+		
+		if(document.getElementById('strCDA_852_field_0_141').value != '')
+		{
+			document.getElementById ( 'tableid_141' ).style.display = 'inline';
+		} 	
+	}
+}
+
+function fn_FEXCO_BehindReason_Resources()
+{
+	if(document.getElementById('strCDA_852_field_0_16').value == 'Behind' || document.getElementById('strCDA_852_field_0_16').value == 'At Risk')
+	{		
+		document.getElementById ( 'tableid_141' ).style.display = 'inline';	
+		
+		if(document.getElementById('strCDA_852_field_0_140').value != '')
+		{
+			document.getElementById ( 'tableid_140' ).style.display = 'inline';
+		} 
+		
+		if(document.getElementById('strCDA_852_field_0_142').value != '')
+		{
+			document.getElementById ( 'tableid_142' ).style.display = 'inline';
+		} 	
+	}
+}
+
+function fn_FEXCO_financial_Logic(){
+	// * Hide all form question on the page
+	fn_RangeDisplayChange( 0, 160, 'none' );
+	
+	// * Show the Inline Tab question 
+	document.getElementById ( 'tableid_1' ).style.display = 'inline';
+	
+	// * Show the section group question
+	document.getElementById ( 'tableid_19' ).style.display = 'inline';
+	document.getElementById ( 'tableid_65' ).style.display = 'inline';
+	document.getElementById ( 'tableid_66' ).style.display = 'inline';
+	document.getElementById ( 'tableid_67' ).style.display = 'inline';
+	
+	// * Show all requited questions for the tab (  required - All that should be visible by default )
+	document.getElementById ( 'tableid_20' ).style.display = 'inline';
+	document.getElementById ( 'tableid_21' ).style.display = 'inline';
+	document.getElementById ( 'tableid_22' ).style.display = 'inline';
+	document.getElementById ( 'tableid_64' ).style.display = 'inline';
+
+	document.getElementById ( 'tableid_68' ).style.display = 'inline';
+	document.getElementById ( 'tableid_69' ).style.display = 'inline';
+	document.getElementById ( 'tableid_70' ).style.display = 'inline';
+	document.getElementById ( 'tableid_71' ).style.display = 'inline';
+	document.getElementById ( 'tableid_72' ).style.display = 'inline';
+	document.getElementById ( 'tableid_73' ).style.display = 'inline';
+	document.getElementById ( 'tableid_74' ).style.display = 'inline';
+	document.getElementById ( 'tableid_75' ).style.display = 'inline';
+	document.getElementById ( 'tableid_76' ).style.display = 'inline';
+	document.getElementById ( 'tableid_77' ).style.display = 'inline';
+	document.getElementById ( 'tableid_78' ).style.display = 'inline';
+	document.getElementById ( 'tableid_79' ).style.display = 'inline';
+	
+	
+
+}
+
+
+
+
+function fn_FEXCO_MileStoneTab_Logic(){
+	// * Hide all form question on the page
+	fn_RangeDisplayChange( 0, 160, 'none' );
+	
+	// * Show the Inline Tab question 
+	document.getElementById ( 'tableid_1' ).style.display = 'inline';
+	
+	// * Show the section group question
+	document.getElementById ( 'tableid_27' ).style.display = 'inline';
+	
+	// * Show all requited questions for the tab (  required - All that should be visible by default )
+	document.getElementById ( 'tableid_28' ).style.display = 'inline';
+	document.getElementById ( 'tableid_33' ).style.display = 'inline';
+	document.getElementById ( 'tableid_34' ).style.display = 'inline';
+	document.getElementById ( 'tableid_35' ).style.display = 'inline';
+	
+
+	
+	// ******************************************************************************************************************
+	// * Main logic for the inline tab
+	// ******************************************************************************************************************
+	if( strCDA_852_field_0_28.value == '1' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+	}
+
+else if	( strCDA_852_field_0_28.value == '2' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		
+}
+else if	( strCDA_852_field_0_28.value == '3' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		document.getElementById ( 'tableid_83' ).style.display = 'inline';
+		document.getElementById ( 'tableid_84' ).style.display = 'inline';
+		document.getElementById ( 'tableid_85' ).style.display = 'inline';
+}
+else if	( strCDA_852_field_0_28.value == '4' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		document.getElementById ( 'tableid_83' ).style.display = 'inline';
+		document.getElementById ( 'tableid_84' ).style.display = 'inline';
+		document.getElementById ( 'tableid_85' ).style.display = 'inline';
+		document.getElementById ( 'tableid_86' ).style.display = 'inline';
+		document.getElementById ( 'tableid_87' ).style.display = 'inline';
+		document.getElementById ( 'tableid_88' ).style.display = 'inline';
+}
+else if	( strCDA_852_field_0_28.value == '5' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		document.getElementById ( 'tableid_83' ).style.display = 'inline';
+		document.getElementById ( 'tableid_84' ).style.display = 'inline';
+		document.getElementById ( 'tableid_85' ).style.display = 'inline';
+		document.getElementById ( 'tableid_86' ).style.display = 'inline';
+		document.getElementById ( 'tableid_87' ).style.display = 'inline';
+		document.getElementById ( 'tableid_88' ).style.display = 'inline';
+		document.getElementById ( 'tableid_89' ).style.display = 'inline';
+		document.getElementById ( 'tableid_90' ).style.display = 'inline';
+		document.getElementById ( 'tableid_91' ).style.display = 'inline';
+}
+else if	( strCDA_852_field_0_28.value == '6' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		document.getElementById ( 'tableid_83' ).style.display = 'inline';
+		document.getElementById ( 'tableid_84' ).style.display = 'inline';
+		document.getElementById ( 'tableid_85' ).style.display = 'inline';
+		document.getElementById ( 'tableid_86' ).style.display = 'inline';
+		document.getElementById ( 'tableid_87' ).style.display = 'inline';
+		document.getElementById ( 'tableid_88' ).style.display = 'inline';
+		document.getElementById ( 'tableid_89' ).style.display = 'inline';
+		document.getElementById ( 'tableid_90' ).style.display = 'inline';
+		document.getElementById ( 'tableid_91' ).style.display = 'inline';
+		document.getElementById ( 'tableid_110' ).style.display = 'inline';
+		document.getElementById ( 'tableid_111' ).style.display = 'inline';
+		document.getElementById ( 'tableid_112' ).style.display = 'inline';
+}
+else if	( strCDA_852_field_0_28.value == '7' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		document.getElementById ( 'tableid_83' ).style.display = 'inline';
+		document.getElementById ( 'tableid_84' ).style.display = 'inline';
+		document.getElementById ( 'tableid_85' ).style.display = 'inline';
+		document.getElementById ( 'tableid_86' ).style.display = 'inline';
+		document.getElementById ( 'tableid_87' ).style.display = 'inline';
+		document.getElementById ( 'tableid_88' ).style.display = 'inline';
+		document.getElementById ( 'tableid_89' ).style.display = 'inline';
+		document.getElementById ( 'tableid_90' ).style.display = 'inline';
+		document.getElementById ( 'tableid_91' ).style.display = 'inline';
+		document.getElementById ( 'tableid_110' ).style.display = 'inline';
+		document.getElementById ( 'tableid_111' ).style.display = 'inline';
+		document.getElementById ( 'tableid_112' ).style.display = 'inline';
+		document.getElementById ( 'tableid_116' ).style.display = 'inline';
+		document.getElementById ( 'tableid_117' ).style.display = 'inline';
+		document.getElementById ( 'tableid_118' ).style.display = 'inline';
+
+}
+else if	( strCDA_852_field_0_28.value == '8' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		document.getElementById ( 'tableid_83' ).style.display = 'inline';
+		document.getElementById ( 'tableid_84' ).style.display = 'inline';
+		document.getElementById ( 'tableid_85' ).style.display = 'inline';
+		document.getElementById ( 'tableid_86' ).style.display = 'inline';
+		document.getElementById ( 'tableid_87' ).style.display = 'inline';
+		document.getElementById ( 'tableid_88' ).style.display = 'inline';
+		document.getElementById ( 'tableid_89' ).style.display = 'inline';
+		document.getElementById ( 'tableid_90' ).style.display = 'inline';
+		document.getElementById ( 'tableid_91' ).style.display = 'inline';
+		document.getElementById ( 'tableid_110' ).style.display = 'inline';
+		document.getElementById ( 'tableid_111' ).style.display = 'inline';
+		document.getElementById ( 'tableid_112' ).style.display = 'inline';
+		document.getElementById ( 'tableid_116' ).style.display = 'inline';
+		document.getElementById ( 'tableid_117' ).style.display = 'inline';
+		document.getElementById ( 'tableid_118' ).style.display = 'inline';
+		document.getElementById ( 'tableid_122' ).style.display = 'inline';
+		document.getElementById ( 'tableid_123' ).style.display = 'inline';
+		document.getElementById ( 'tableid_124' ).style.display = 'inline';
+}
+else if	( strCDA_852_field_0_28.value == '9' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		document.getElementById ( 'tableid_83' ).style.display = 'inline';
+		document.getElementById ( 'tableid_84' ).style.display = 'inline';
+		document.getElementById ( 'tableid_85' ).style.display = 'inline';
+		document.getElementById ( 'tableid_86' ).style.display = 'inline';
+		document.getElementById ( 'tableid_87' ).style.display = 'inline';
+		document.getElementById ( 'tableid_88' ).style.display = 'inline';
+		document.getElementById ( 'tableid_89' ).style.display = 'inline';
+		document.getElementById ( 'tableid_90' ).style.display = 'inline';
+		document.getElementById ( 'tableid_91' ).style.display = 'inline';
+		document.getElementById ( 'tableid_110' ).style.display = 'inline';
+		document.getElementById ( 'tableid_111' ).style.display = 'inline';
+		document.getElementById ( 'tableid_112' ).style.display = 'inline';
+		document.getElementById ( 'tableid_116' ).style.display = 'inline';
+		document.getElementById ( 'tableid_117' ).style.display = 'inline';
+		document.getElementById ( 'tableid_118' ).style.display = 'inline';
+		document.getElementById ( 'tableid_122' ).style.display = 'inline';
+		document.getElementById ( 'tableid_123' ).style.display = 'inline';
+		document.getElementById ( 'tableid_124' ).style.display = 'inline';
+		document.getElementById ( 'tableid_128' ).style.display = 'inline';
+		document.getElementById ( 'tableid_129' ).style.display = 'inline';
+		document.getElementById ( 'tableid_130' ).style.display = 'inline';
+}
+
+else if	( strCDA_852_field_0_28.value == '10' ){
+		document.getElementById ( 'tableid_95' ).style.display = 'inline';
+		document.getElementById ( 'tableid_31' ).style.display = 'inline';
+		document.getElementById ( 'tableid_38' ).style.display = 'inline';
+		document.getElementById ( 'tableid_80' ).style.display = 'inline';
+		document.getElementById ( 'tableid_81' ).style.display = 'inline';
+		document.getElementById ( 'tableid_82' ).style.display = 'inline';
+		document.getElementById ( 'tableid_83' ).style.display = 'inline';
+		document.getElementById ( 'tableid_84' ).style.display = 'inline';
+		document.getElementById ( 'tableid_85' ).style.display = 'inline';
+		document.getElementById ( 'tableid_86' ).style.display = 'inline';
+		document.getElementById ( 'tableid_87' ).style.display = 'inline';
+		document.getElementById ( 'tableid_88' ).style.display = 'inline';
+		document.getElementById ( 'tableid_89' ).style.display = 'inline';
+		document.getElementById ( 'tableid_90' ).style.display = 'inline';
+		document.getElementById ( 'tableid_91' ).style.display = 'inline';
+		document.getElementById ( 'tableid_110' ).style.display = 'inline';
+		document.getElementById ( 'tableid_111' ).style.display = 'inline';
+		document.getElementById ( 'tableid_112' ).style.display = 'inline';
+		document.getElementById ( 'tableid_116' ).style.display = 'inline';
+		document.getElementById ( 'tableid_117' ).style.display = 'inline';
+		document.getElementById ( 'tableid_118' ).style.display = 'inline';
+		document.getElementById ( 'tableid_122' ).style.display = 'inline';
+		document.getElementById ( 'tableid_123' ).style.display = 'inline';
+		document.getElementById ( 'tableid_124' ).style.display = 'inline';
+		document.getElementById ( 'tableid_128' ).style.display = 'inline';
+		document.getElementById ( 'tableid_129' ).style.display = 'inline';
+		document.getElementById ( 'tableid_130' ).style.display = 'inline';
+		document.getElementById ( 'tableid_134' ).style.display = 'inline';
+		document.getElementById ( 'tableid_135' ).style.display = 'inline';
+		document.getElementById ( 'tableid_136' ).style.display = 'inline';
+}
+}
+function fn_FEXCO_team_Logic(){
+	// * Hide all form question on the page
+	fn_RangeDisplayChange( 0, 160, 'none' );
+	
+	// * Show the Inline Tab question 
+	document.getElementById ( 'tableid_1').style.display = 'inline';
+	
+	// * Show the section group question
+	document.getElementById ( 'tableid_39' ).style.display = 'inline';
+
+	
+	// * Show all requited questions for the tab (  required - All that should be visible by default )
+	document.getElementById ( 'tableid_57' ).style.display = 'inline';
+	document.getElementById ( 'tableid_58' ).style.display = 'inline';
+	document.getElementById ( 'tableid_60' ).style.display = 'inline';
+
+	
+fn_GenerateAListOfAllContactsForThatClient();
+}
+
+function fnFEXCO_LimitField(strField, limitField)
+{
+	var str = document.getElementById(strField).value;
+	if (str.length > limitField)
+	{
+		alert('This Field Has a Character Limit of ' + limitField);
+		document.getElementById(strField).value = '';
+	}
+}
+
+
+function fn_FEXCO_Main(){
+
+
+	
+	
+	liTab_strCDA_852_field_0_1_tableid_2.setAttribute ( "onClick", 'fn_FEXCO_Overview_Logic();');
+	liTab_strCDA_852_field_0_1_tableid_3.setAttribute ( "onClick" ,'fn_FEXCO_status_Logic();');
+	liTab_strCDA_852_field_0_1_tableid_19.setAttribute ( "onClick", 'fn_FEXCO_financial_Logic();');
+	liTab_strCDA_852_field_0_1_tableid_27.setAttribute("onClick", 'fn_FEXCO_MileStoneTab_Logic();');
+	liTab_strCDA_852_field_0_1_tableid_39.setAttribute ("onClick", 'fn_FEXCO_team_Logic();');
+	
+	
+	
+	   fn_FEXCO_Overview_Logic();
+	
+}
+fn_FEXCO_Main();
+fn_Main();
+
+
+
+
+
+
+</html>
